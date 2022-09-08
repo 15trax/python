@@ -1,12 +1,11 @@
-numero = int(input('Ingresar numero de 2 cifras: '))
+num = int(input("Ingrese un numero de dos cifras: "))
 
-if numero > 100:
-  print(f'El número "{numero}", tiene más de 2 cifras')
-else:
-  primer_digito = int((numero / 10) % 10)
-  segundo_digito = numero % 10
-
-  if numero > 50:
-    print(f'{segundo_digito}{primer_digito}')
-  else:
-    print(f'{primer_digito}; {segundo_digito}')
+if 10 > num or num > 99 :
+    print ("solo se permiten numeros de dos cifras")
+elif num > 50 :
+    primer_digito = int((num / 10) % 10)
+    segundo_digito = num % 10
+    print (f"{segundo_digito}{primer_digito}")
+else :
+    digito_u = int(num % 10)
+    print(digito_u)
